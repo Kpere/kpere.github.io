@@ -1,0 +1,1 @@
+This is a simple basic interactive front end of a school website
