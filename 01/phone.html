@@ -1,4 +1,23 @@
 <style type="text/css">
+       h3 {
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    
+    html,body {
+    width: 100%;
+    background-repeat: no-repeat;
+        font-size: 100%;
+    }
+    h1,h2,h3, .btn {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
      #firstt{
         border-style: solid;
         border-width: 0.5px;
@@ -16,41 +35,12 @@
         align-items: center;
         text-align: center;
     }
-    body,html{
-        width:90%;
-        height:100%;
-        padding: 10px;
-    }
-    #topform{
-        background: #F76126;
-        color: white;
-    }
-    #topdata{
-        color:black;
-    }
-     #wholeform{
-        background: #F76126;
-        color: white;
-         height: 70%;
-    }
-    #walletmoney, #selectaccount{
-        color:#F76126;
-    }
-    #payid{
-        color:black;
-    }
-    #topform2{
-        background:white;
-        color: #F76126;
-        border-style: solid;
-        padding: 20px;
-    }
 </style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-	<title>Steak House - Free HTML CSS Template</title>
+	<title>PhoneTopUP</title>
 
   	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -67,7 +57,7 @@
     
   	<link rel="stylesheet" href="css/flexslider.css">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stylle.css">
 
   	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
@@ -122,13 +112,13 @@
                         <h5>Refill Top Up Wallet</h5>
                         <h5 id="selectaccount"><center>Select Account</center></h5>
                         <center>
-                        <button class="">#100</button>
-                        <button class="">#500</button>
-                        <button class="">#1,000</button>
+                        <button id="firstwallet" class="">#100</button>
+                        <button id="firstwallet" class="">#500</button>
+                        <button id="firstwallet" class="">#1,000</button>
                         <br><br>
-                        <button class="">#2,000</button>
-                        <button class="">#5,000</button>
-                        <button class="">#10,000</button>
+                        <button id="firstwallet" class="">#2,000</button>
+                        <button id="firstwallet" class="">#5,000</button>
+                        <button id="firstwallet" class="">#10,000</button>
                         </center>
                     </div>
         </div >
@@ -136,14 +126,16 @@
         <br><br>
        <div class="row">
            <div id="wholeform">
-           <div class="col-md-8">
+           <div class="col-sm-12 col-md-8">
                <div id="">
                    <form id="topform">
                <center><h4><strong>Top UP Prepaid Mobile Phone</strong></h4></center>
                     <div id="">
                             <div id="topform2">
                             <h4>Select Items</h4>
-                            <button><strong>Chef's Phone - 417-873-6000</strong></button>
+                            <button id="names"><strong>Chef's Phone - 417-873-6000</strong></button>
+                            <br><br>
+                            <span class="data" id="chef">TOP UP HISTORY</span>
                             <div id="">
                                 <h5 id="selectaccount">Select Amount</h5>
                         <button id="payid" class="">#100</button>
@@ -154,33 +146,40 @@
                         <button id="payid" class="">#10,000</button>
                             </div><br>
                             <span class="data" id="chef"></span>
-                                <button><strong>CTO's Phone - 417-900-5000</strong></button>
+                                <button id="names"><strong>HRM's Phone - 417-100-5000</strong></button>
+                            <span id="hrm"></span><br><br>
+                                <button id="names"><strong>CTO's Phone - 417-900-5000</strong></button>
                             <span id="cto"></span><br><br>
-                                <button><strong>MD's Phone - 417-500-0000</strong></button>
+                                <button id="names"><strong>MD's Phone - 417-500-0000</strong></button>
                             <span id="md"></span><br><br>
-                                <button><strong>CSO's Phone - 417-900-9000</strong></button>
+                                <button id="names"><strong>CSO's Phone - 417-900-9000</strong></button>
                             <span id="cso"></span><br><br>
                         </div>
                     </div>
                    </form>
                    </div>
            </div >
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
                 <div id="topdata">
-                <h5>TOP UP DATA</h5>
-                        <button class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <button class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <button class="">1.5 GB<br>30 Days<br>#1,000</button>
+                    <br>
+                <h5 id="top">TOP UP DATA PLAN</h5><center>
+                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
+                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
+                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
                         <br><br>
-                        <button class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <button class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <button class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <br><br>
+                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
+                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
+                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
+                        <br><br><br>
+                    </center>
                     </div>
                     </div>
+               
            <div id="">
+               <center><button id="foot">TOP ALL</button></center>
                
            </div>
+                
            </div>
         </div>
     </body>
