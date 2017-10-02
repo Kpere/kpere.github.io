@@ -1,7 +1,7 @@
     body,html{
         width:90%;
         height:100%;
-        padding: 10px;
+        padding: 5px;
     }
     #topform{
         background: #F76126;
@@ -9,6 +9,10 @@
     }
     #topdata{
         color:black;
+        background: white;
+        
+        border-color:  black;
+        margin-top: 35px;
     }
      #wholeform{
         background: #F76126;
@@ -29,6 +33,7 @@
     #payid{
         color:black;
         width:10%;
+        font-size: 10px;
         background: transparent;
         border-radius: 10px;
     }
@@ -50,7 +55,7 @@
     #foot{
         border-width: 2px;
         background: transparent;
-        margin-top: 100px;
+        margin-top: 70px;
         border-style: solid;
         border-color: white;
         width: 20%;
@@ -59,6 +64,7 @@
         width: 23%;
         background: white;
         border-radius: 10px;
+        font-size: 11px;
     }
 
 /* hover min css */
@@ -111,7 +117,7 @@
 body {
 		background: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
 	}
 
 html,body {
@@ -120,7 +126,7 @@ html,body {
 }
 
 html {
-  font-size: 100%;
+  font-size: 80%;
 }
 
 

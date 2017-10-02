@@ -1,4 +1,21 @@
 <style type="text/css">
+    #chef{
+        background: transparent;
+        border-width: 1px;
+        color: #F76126;
+        font-family: cursive;
+        font-size: 12px;
+    }
+    #refillwallet{
+        font-size: 17px;
+    }
+    #topbalance{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    #avmoney, #selectaccount{
+        font-size: 13px;
+    }
        h3 {
       font-size: 15px;
       font-weight: bold;
@@ -6,7 +23,10 @@
       text-transform: uppercase;
       font-weight: 400;
     }
-    
+    #topheader{
+        color: #F76126;
+        font-size: 15px;
+    }
     html,body {
     width: 100%;
     background-repeat: no-repeat;
@@ -34,6 +54,13 @@
         align-content: center;
         align-items: center;
         text-align: center;
+    }
+    #icons{
+        width:15%;
+        height: 10%;
+        border-style: solid;
+        border-color:black;
+        border-width:thin;
     }
 </style>
 <!DOCTYPE html>
@@ -63,6 +90,8 @@
     
   	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
     <!--End Stylesheet-->
+    
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <body>
          
     <nav class="navbar navbar-default">
@@ -95,13 +124,13 @@
         </div>
         </div>
         </nav>
-        <h3>Balance</h3>
+        <h3 id="topbalance">Balance</h3>
     <div class="row">
         <div class="col-sm-12 col-md-8">
                     <div id="first">
                         <center>
                             <div id="firstt">
-                        <h5><center>Available<br>in Wallet</center></h5>
+                        <h5 id="avmoney"><center>Available<br>in Wallet</center></h5>
                         <span id="walletmoney"><center><em>#1,000,000</em></center></span>
                                 </div>
                             </center>
@@ -109,7 +138,7 @@
         </div >
         <div class="col-sm-6 col-md-4">
             <div id="">
-                        <h5>Refill Top Up Wallet</h5>
+                        <h5 id="refillwallet">Refill Top Up Wallet</h5>
                         <h5 id="selectaccount"><center>Select Account</center></h5>
                         <center>
                         <button id="firstwallet" class="">#100</button>
@@ -135,8 +164,8 @@
                             <h4>Select Items</h4>
                             <button id="names"><strong>Chef's Phone - 417-873-6000</strong></button>
                             <br><br>
-                            <span class="data" id="chef">TOP UP HISTORY</span>
-                            <div id="">
+                            <div id="code">
+                                <button class="data" id="chef">TOP UP HISTORY =></button>
                                 <h5 id="selectaccount">Select Amount</h5>
                         <button id="payid" class="">#100</button>
                         <button id="payid" class="">#500</button>
@@ -146,7 +175,7 @@
                         <button id="payid" class="">#10,000</button>
                             </div><br>
                             <span class="data" id="chef"></span>
-                                <button id="names"><strong>HRM's Phone - 417-100-5000</strong></button>
+                            <button id="names" onclick="myFunction()"><strong>HRM's Phone - 417-100-5000</strong></button>
                             <span id="hrm"></span><br><br>
                                 <button id="names"><strong>CTO's Phone - 417-900-5000</strong></button>
                             <span id="cto"></span><br><br>
@@ -160,27 +189,43 @@
                    </div>
            </div >
             <div class="col-sm-6 col-md-4">
-                <div id="topdata">
-                    <br>
-                <h5 id="top">TOP UP DATA PLAN</h5><center>
-                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
+                 <div id="topdata">
+                    <br><center>
+                     <h4 id="topheader"><strong>TopUP Data Plan</strong></h4>
+                        <img src="images/MTN-logo-459AAF9482-seeklogo.com.png" id="icons" class="">
+                        <img src="images/glo-logo2.jpg" id="icons" class="">
+                        <img src="images/9Mobile-Telecom-Logo-2.jpg" id="icons" class="">
+                        <img src="images/airtel-new-logo-ver.jpg" id="icons" class="">
+                        <br>
+                     <hr>
+                <center>
+                        <button id="datapart" class=""><strong>1.5 GB</strong><br><strong>30 Days</strong><br>#1,000</button>
+                        <button id="datapart" class=""><strong>1.5 GB</strong><br><strong>30 Days</strong><br>#1,000</button>
+                        <button id="datapart" class=""><strong>1.5 GB</strong><br><strong>30 Days</strong><br>#1,000</button>
                         <br><br>
-                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
-                        <button id="datapart" class="">1.5 GB<br>30 Days<br>#1,000</button>
+                        <button id="datapart" class=""><strong>1.5 GB</strong><br><strong>30 Days</strong><br>#1,000</button>
+                        <button id="datapart" class=""><strong>1.5 GB</strong><br><strong>30 Days</strong><br>#1,000</button>
+                        <button id="datapart" class=""><strong>1.5 GB</strong><br><strong>30 Days</strong><br>#1,000</button>
                         <br><br><br>
+                    </center>
                     </center>
                     </div>
                     </div>
                
            <div id="">
                <center><button id="foot">TOP ALL</button></center>
-               
            </div>
                 
            </div>
         </div>
     </body>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
 
+  $(function(){
+      $("#names").click(function(){
+          $("#code").toggle();
+      });
+  });
+
+</script>
