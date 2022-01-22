@@ -49,14 +49,17 @@ z-index: 2;
 backdrop-filter: blur(50rem);
 border-radius: 50%;
 }
+
 .circle1{
 top: 5%;
 right: 15%;
 }
+
 .circle2{
 bottom: 5%;
 left: 15%;
 }
+
 .dashboard{
 flex: 1;
 display: flex;
@@ -70,12 +73,14 @@ rgba(255, 255, 255, 0.7),
 rgba(255, 255, 255, 0.3));
 border-radius: 2rem;
 }
+
 .link{
 display: flex;
 padding: 1rem 3rem;
 align-items: center;
 margin: 2rem;
 }
+
 .link h2{
 padding: 0rem 2rem;
 
